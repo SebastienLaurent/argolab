@@ -18,7 +18,7 @@ spec:
         imagePullPolicy: Always
         env:
         - name: SERVER_MESSAGE
-          value: MessageImportant
+          value: ImportantMessage
         ports:
         -  name: server-endpoint
            containerPort: 8000
