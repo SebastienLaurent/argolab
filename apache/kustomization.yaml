@@ -3,3 +3,6 @@ kind: Kustomization
 
 resources:
   - all.yaml
+
+commonLabels:
+  a4c-label: "from A4C"
