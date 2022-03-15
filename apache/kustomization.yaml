@@ -5,4 +5,4 @@ resources:
   - all.yaml
 
 commonLabels:
-  a4_label : "from A4C"
+  a4-label : "a4c-value"
