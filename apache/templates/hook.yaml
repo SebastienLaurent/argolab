@@ -1,13 +1,13 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  generateName: hook-
+  name: hook-task
   annotations:
     argocd.argoproj.io/hook: PreSync
 spec:
   template:
     metadata:
-      name: long-task
+      name: hook-task
     spec:
       containers:
       - name: long-task
