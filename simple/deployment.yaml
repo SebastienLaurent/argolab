@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: smoke-deployment
+  name: simple-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: smoke
+      app: simple
   template:
     metadata:
       labels:
-        app: smoke
+        app: simple
     spec:
       containers:
       - name: "apacheserver-1868502895"
