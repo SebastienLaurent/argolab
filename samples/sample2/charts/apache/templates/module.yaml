@@ -1,0 +1,19 @@
+apiVersion: sample.alien4cloud/v1
+kind: Module
+metadata:
+  name: {{ .Release.Name }}-module
+spec:
+  module: module-test
+  cu: test
+  lst:
+  - val1: v3
+    val2: v4
+  - val1: v5
+    val2: v6
+  sidecar:
+     containers:
+     - name: "sidecar"
+       image: sebastienlaurent/sideshell:latest
+       imagePullPolicy: Always
+
+
