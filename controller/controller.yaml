@@ -4210,6 +4210,13 @@ rules:
 - apiGroups:
   - ""
   resources:
+  - events
+  verbs:
+  - create
+  - patch
+- apiGroups:
+  - ""
+  resources:
   - pods
   verbs:
   - create
@@ -4407,7 +4414,7 @@ spec:
         - --leader-elect
         command:
         - /manager
-        image: sebastienlaurent/sample-controller:latest
+        image: controller:latest
         livenessProbe:
           httpGet:
             path: /healthz
